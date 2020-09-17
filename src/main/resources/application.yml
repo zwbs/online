@@ -1,0 +1,32 @@
+spring:
+  application:
+    name: user
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 192.168.159.123:8848
+  datasource:
+    url: jdbc:mysql://192.168.159.123:3306/online_edu?characterEncoding=utf-8&useSSL=false
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.jdbc.Driver
+  redis:
+    host: 192.168.159.123
+    port: 6379
+server:
+  port: 8150
+mybatis-plus:
+  mapper-locations: classpath:/mapper/xml/*.xml
+sms:
+  accessKeyId: LTAI4G3VN4ieLAEoCaDFdc2c
+  accessSecret: vpKxrbfuoXrS3U3vssnlafDDbipBeD
+wx:
+  open:
+    # 微信开放平台 appid
+    app_id: wxed9954c01bb89b47
+    # 微信开放平台 appsecret
+    app_secret: a7482517235173ddb4083788de60b90e
+    # 微信开放平台 重定向url（guli.shop需要在微信开放平台配置）
+    redirect_url: http://guli.shop/api/ucenter/wx/callback
+
+

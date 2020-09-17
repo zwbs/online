@@ -1,0 +1,52 @@
+{
+  "groups": [
+    {
+      "name": "sms",
+      "type": "com.atguigu.online_edu_user.edu.service.impl.SendSmsServiceImpl",
+      "sourceType": "com.atguigu.online_edu_user.edu.service.impl.SendSmsServiceImpl"
+    },
+    {
+      "name": "wx.open",
+      "type": "com.atguigu.online_edu_user.edu.controller.WeCharController",
+      "sourceType": "com.atguigu.online_edu_user.edu.controller.WeCharController"
+    }
+  ],
+  "properties": [
+    {
+      "name": "sms.access-key-id",
+      "type": "java.lang.String",
+      "sourceType": "com.atguigu.online_edu_user.edu.service.impl.SendSmsServiceImpl"
+    },
+    {
+      "name": "sms.access-secret",
+      "type": "java.lang.String",
+      "sourceType": "com.atguigu.online_edu_user.edu.service.impl.SendSmsServiceImpl"
+    },
+    {
+      "name": "sms.redis-template",
+      "type": "org.springframework.data.redis.core.RedisTemplate<java.lang.Object,java.lang.Object>",
+      "sourceType": "com.atguigu.online_edu_user.edu.service.impl.SendSmsServiceImpl"
+    },
+    {
+      "name": "wx.open.app-id",
+      "type": "java.lang.String",
+      "sourceType": "com.atguigu.online_edu_user.edu.controller.WeCharController"
+    },
+    {
+      "name": "wx.open.app-secret",
+      "type": "java.lang.String",
+      "sourceType": "com.atguigu.online_edu_user.edu.controller.WeCharController"
+    },
+    {
+      "name": "wx.open.member-center-service",
+      "type": "com.atguigu.online_edu_user.edu.service.MemberCenterService",
+      "sourceType": "com.atguigu.online_edu_user.edu.controller.WeCharController"
+    },
+    {
+      "name": "wx.open.redirect-url",
+      "type": "java.lang.String",
+      "sourceType": "com.atguigu.online_edu_user.edu.controller.WeCharController"
+    }
+  ],
+  "hints": []
+}
